@@ -1,4 +1,4 @@
-# 👨‍💻 Application launcher
+# 📱 Application launcher
 
 Insieme al mio window manager personalizzato, utilizzo dmenu, un application launcher ideato da suckless software e modificato apposta per integrarsi con la mia personalizzazione di dwm
 
