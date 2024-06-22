@@ -29,6 +29,6 @@ then
 else
 	if [ $((index)) -gt -1 ];
 	then
-		gio launch "/usr/share/applications/${files[index]}"
+		dex --term alacritty "/usr/share/applications/${files[index]}"
 	fi
 fi
