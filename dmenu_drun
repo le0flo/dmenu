@@ -23,7 +23,12 @@ do
 	fi
 done
 
-if [ $((index)) -gt -1 ];
+if [ -z ${index+x} ];
 then
-	gio launch "/usr/share/applications/${files[index]}"
+	echo "No application was chosen"
+else
+	if [ $((index)) -gt -1 ];
+	then
+		gio launch "/usr/share/applications/${files[index]}"
+	fi
 fi
