@@ -1,0 +1,29 @@
+#!/bin/bash
+
+files=()
+names=()
+
+for fn in $(ls /usr/share/applications | grep ".desktop");
+do
+	uncut_name=$(cat "/usr/share/applications/$fn" | grep -m 1 "Name=")
+	name=${uncut_name#*=}
+	
+	files[${#files[@]}]=$fn
+	names[${#names[@]}]=$name
+done
+
+app=$(printf "%s\n" "${names[@]}" | dmenu "$@" )
+
+for i in ${!names[@]};
+do
+	if [[ "${names[i]}" = "${app}" ]];
+	then
+		index=$i
+		break
+	fi
+done
+
+if [ $((index)) -gt -1 ];
+then
+	gio launch "/usr/share/applications/${files[index]}"
+fi
