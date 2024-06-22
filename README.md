@@ -2,6 +2,14 @@
 
 Insieme al mio window manager personalizzato, utilizzo dmenu, un application launcher ideato da suckless software e modificato apposta per integrarsi con la mia personalizzazione di dwm
 
+## Dipendenze
+
+Lo script dmenu_drun necessita dell'applicazione dex per avviare i file .desktop, installala con il seguente comando.
+
+```sh
+sudo pacman -S dex
+```
+
 ## Installazione
 
 Per scaricare il codice, clona la repository con git.
