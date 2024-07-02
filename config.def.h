@@ -8,7 +8,7 @@ static const int user_bh = 0;
 
 /* font */
 static const char *fonts[] = {
-	"BigBlueTermPlus Nerd Font:size=8"
+	"FiraCode Nerd Font Mono:size=8"
 };
 
 /* prompt */
