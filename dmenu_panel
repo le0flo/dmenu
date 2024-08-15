@@ -1,0 +1,25 @@
+#!/bin/bash
+
+names=("Shutdown" "Reboot")
+cmds=("shutdown -h 0" "reboot")
+
+cmd=$(printf "%s\n" "${names[@]}" | dmenu "$@" )
+
+for i in ${!names[@]};
+do
+	if [[ "${names[i]}" = "${cmd}" ]];
+	then
+		index=$i
+		break
+	fi
+done
+
+if [ -z ${index+x} ];
+then
+	echo "No valid choice"
+else
+	if [ $((index)) -gt -1 ];
+	then
+		/bin/sh -c "${cmds[index]}"
+	fi
+fi
