@@ -1,4 +1,4 @@
-# 📱 Application launcher
+# Application launcher
 
 Una fork di dmenu
 
