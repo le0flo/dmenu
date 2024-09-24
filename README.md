@@ -2,7 +2,7 @@
 
 Una fork di dmenu
 
-## Dipendenze
+### Dipendenze
 
 Lista delle dipendenze fondamentali per la compilazione.
 
@@ -16,13 +16,9 @@ Lista di pacchetti necessari per questa build di dmenu.
 sudo pacman -S dex ttf-firacode-nerd alacritty
 ```
 
-## Installazione
+### Installazione
 
 ```sh
 cd dmenu
 sudo make clean install
 ```
-
-# Problemi e domande
-
-Se avete problemi, dubbi o domande in generale sul progetto, aprite una issue nella repository.
