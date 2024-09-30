@@ -1,6 +1,6 @@
 # Dynamic menu
 
-Una fork di dmenu
+La mia fork di dmenu
 
 ### Dipendenze
 
