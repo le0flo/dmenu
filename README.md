@@ -1,16 +1,16 @@
 # Dynamic menu
 
-Una fork di dmenu
+Una fork di dmenu.
 
 ### Dipendenze
 
-Dipendenze fondamentali per la compilazione.
+Dipendenze fondamentali per la compilazione:
 
 ```sh
 sudo pacman -S base-devel xorg-server libx11 libxinerama
 ```
 
-Pacchetti necessari per questa build di dmenu.
+Pacchetti necessari per questa build di dmenu:
 
 ```sh
 sudo pacman -S dex ttf-firacode-nerd alacritty
