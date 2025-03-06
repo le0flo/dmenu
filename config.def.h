@@ -8,7 +8,7 @@ static const int user_bh = 0;
 
 /* font */
 static const char *fonts[] = {
-	"FiraCode Nerd Font Mono:style=Bold:size=12"
+	"SF Pro:style=Bold:size=12"
 };
 
 /* prompt */
@@ -17,7 +17,7 @@ static const char *prompt = NULL;
 /* colors */
 static const char *colors[SchemeLast][2] = {
 	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#222222", "#eb3434" },
+	[SchemeSel] = { "#222222", "#f3938e" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
 
